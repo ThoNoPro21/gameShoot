@@ -31,9 +31,7 @@ class Player(Ship):
             laser.move()
             if laser.off_screen(WIDTH, HEIGHT):
                 self.lasers.remove(laser)
-
             else:
-
                 for obj in objs[:]:
                     if laser.collision(obj):
                         self.score += 10
